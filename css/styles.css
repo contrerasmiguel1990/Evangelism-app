@@ -1,0 +1,325 @@
+.main-header {
+  background-color: #A52A2A;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+.leaveComment{
+  float: auto;
+  width: 30%;
+}
+
+
+#title {
+  background-color: #A52A2A;
+  color: white;
+  float:auto;
+  font-size: 20px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  width:20%;
+  border-radius: 30px;
+  margin:auto;
+  margin-top:40px;
+
+}
+
+
+
+.container {
+    font-family:cursive;
+
+}
+/*
+.title {
+  width:30%;
+  margin:auto;
+  border-radius: 25px;
+*/
+}
+
+.wrapper {
+  width:70%;
+  margin: auto;
+  padding:30px;
+
+}
+
+.main-footer{
+  background: #d9e4ea;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #A52A2A;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Image containers */
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Image containers */
+.img-column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+
+
+}
+
+/*Flex contaniner*/
+
+.continents {
+  display:flex;
+	padding: 10px;
+	background: #fff;
+  border-radius: 5px;
+  width:100%;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.item {
+  font-size: 20px;
+	color: #fff;
+  vertical-align: auto;
+	padding: 15px;
+	margin: 5px;
+	background: #333;
+  text-align:center;
+  width:15.5%;
+
+	border-radius: 50%;
+}
+
+/* Input form*/
+
+label{
+  margin-top: 30px;
+  display: block;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #cdcfcf;
+    margin-top:5px;
+    padding: 20px;
+    color: #333;
+    background-color: #f6f8f8;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+  background: #6388a4;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;}
+
+  /*Input form end*/
+
+
+
+
+/* =================================
+Media Queries==================================== */
+
+@media (min-width: 769px){
+  .container {
+    width:80%;
+    max-width:1000px;
+    text-align: center;
+    margin:0 auto;
+  }
+
+
+  img {
+    width:100%;
+  }
+
+
+}
+
+/* =================================
+Colum images==================================== */
+@media screen and (max-width: 769px) {
+
+  .img-column {
+    width:100%;
+  }
+  .container {
+    width:100%;
+    text-align: center;
+
+  }
+}
